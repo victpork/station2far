@@ -8,8 +8,9 @@ defineOptions({
 })
 
 const props = defineProps<WithClassAsProps>()
-
+// @ts-expect-error: Suppressing unused variable rule temporarily
 const { carouselRef, orientation } = useCarousel()
+
 </script>
 
 <template>
